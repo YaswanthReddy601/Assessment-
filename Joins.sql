@@ -8,7 +8,7 @@ CREATE TABLE `student` (
   PRIMARY KEY (`student_id`)
 );
 
---insert queries to student table
+--insert queries 
 
 insert into student values('501','sai',21);
 insert into student values('502','varun',21);
