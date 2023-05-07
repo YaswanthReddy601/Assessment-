@@ -3,8 +3,8 @@
 -- student definition
 CREATE TABLE `student` (
   `student_id` varchar(100) NOT NULL,
-  `student_name` varchar(100) DEFAULT NULL,
-  `student_age` int DEFAULT NULL,
+  `student_name` varchar(100) ,
+  `student_age` int ,
   PRIMARY KEY (`student_id`)
 );
 
@@ -25,8 +25,8 @@ insert into collegeee values('510','don',20);
 -- college definition
 CREATE TABLE `college` (
   `student_id` varchar(100) NOT NULL,
-  `college_name` varchar(100) DEFAULT NULL,
-  `branch_name` varchar(100) DEFAULT NULL,
+  `college_name` varchar(100) ,
+  `branch_name` varchar(100) ,
   KEY `college_FK` (`student_id`),PRIMARY KEY (`student_id`),
   CONSTRAINT `college_FK` FOREIGN KEY (`student_id`) REFERENCES `student` (`student_id`)
 );
